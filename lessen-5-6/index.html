@@ -29,20 +29,30 @@
     </header>
 
     <div class="modal" id="modal">
-        <div class="form">
-            <button id="closeBtn">X</button>
-            <input type="text" placeholder="Введите имя" required>
-             <input type="email" placeholder="example@email.ru" required>
-             <input type="password" placeholder="Введите пароль" required>
-             <input type="password" placeholder="Повторите пароль" required> 
-             <button type="submit">Зарегистрироваться</button>
+        <div class="register">
+            <form action="#">
+                <h1>Регистрация</h1>
+
+                <label>Имя</label>
+                <input type="text" placeholder="Введите имя" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="example@email.ru" required>
+
+                <label>Пароль</label>
+                <input type="password" placeholder="Введите пароль" required>
+
+                <label>Повторите пароль</label>
+                <input type="password" placeholder="Повторите пароль" required> 
+            
+                <button type="submit">Зарегистрироваться</button>
+        </form>
+
+            <p class="login-text">Уже есть аккаунт ? 
+                <a href="">Войти</a>
+            </p>
         </div>
     </div>
-
-    <script src="scrtipt.js"></script>
-    
-    <main></main>
-
-    <footer></footer>
+<script src="scrtipt.js"></script>
 </body>
 </html>
