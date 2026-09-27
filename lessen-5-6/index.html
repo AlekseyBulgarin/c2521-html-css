@@ -1,58 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Мой сайт</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="navigation">
-                <div class="home"><a href="#"><h2>Главная</h2></a></div>
-                <div class="settings"><a href="#"><h2>Настройки</h2></a></div>
-                <div class="contacts"><a href="#"><h2>Контакты</h2></a></div>
-            </div>
 
-            <div class="auth">
-                <div class="singin">
-                    <h2>Регистрация</h2>
-                    <button id="OpenReg">Зарегистрироваться</button>
-                </div>
-                <div class="login">
-                    <h2>Вход</h2>
-                    <button id="OpenIn">Войти</button>
-                </div>
-            </div>
-        </nav>
-    </header>
+<header>
+    <nav>
 
-    <div class="modal" id="modal">
-        <div class="register">
-            <form action="#">
-                <h1>Регистрация</h1>
+        <div class="navigation">
+            <a href="#">Главная</a>
+            <a href="#">Настройки</a>
+            <a href="#">Контакты</a>
+        </div>
 
-                <label>Имя</label>
-                <input type="text" placeholder="Введите имя" required>
+        <div class="auth">
+            <button id="openRegister">Регистрация</button>
+            <button id="openLogin">Войти</button>
+        </div>
 
-                <label>Email</label>
-                <input type="email" placeholder="example@email.ru" required>
+    </nav>
+</header>
 
-                <label>Пароль</label>
-                <input type="password" placeholder="Введите пароль" required>
+<div class="modal" id="registerModal">
 
-                <label>Повторите пароль</label>
-                <input type="password" placeholder="Повторите пароль" required> 
-            
-                <button type="submit">Зарегистрироваться</button>
+    <div class="modal-window">
+
+        <button class="close" id="closeRegister">×</button>
+
+        <form>
+
+            <h1>Регистрация</h1>
+
+            <label>Имя</label>
+            <input
+                type="text"
+                placeholder="Введите имя"
+                required
+            >
+
+            <label>Email</label>
+            <input
+                type="email"
+                placeholder="example@email.ru"
+                required
+            >
+
+            <label>Пароль</label>
+            <input
+                type="password"
+                placeholder="Введите пароль"
+                required
+            >
+
+            <label>Повторите пароль</label>
+            <input
+                type="password"
+                placeholder="Повторите пароль"
+                required
+            >
+
+            <button type="submit">
+                Зарегистрироваться
+            </button>
+
         </form>
 
-            <p class="login-text">Уже есть аккаунт ? 
-                <a href="">Войти</a>
-            </p>
-        </div>
+        <p class="bottom-text">
+            Уже есть аккаунт?
+            <a href="#" id="goLogin">Войти</a>
+        </p>
+
     </div>
-<script src="scrtipt.js"></script>
+
+</div>
+
+<div class="modal" id="loginModal">
+
+    <div class="modal-window">
+
+        <button class="close" id="closeLogin">×</button>
+
+        <form>
+
+            <h1>Вход</h1>
+
+            <label>Email</label>
+            <input
+                type="email"
+                placeholder="Введите Email"
+                required
+            >
+
+            <label>Пароль</label>
+            <input
+                type="password"
+                placeholder="Введите пароль"
+                required
+            >
+
+            <button type="submit">
+                Войти
+            </button>
+
+        </form>
+
+        <p class="bottom-text">
+            Нет аккаунта?
+            <a href="#" id="goRegister">
+                Зарегистрироваться
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
