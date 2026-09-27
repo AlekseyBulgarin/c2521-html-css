@@ -18,35 +18,29 @@
             <div class="auth">
                 <div class="singin">
                     <h2>Регистрация</h2>
-                    <button>Зарегистрироваться</button>
+                    <button id="OpenReg">Зарегистрироваться</button>
                 </div>
                 <div class="login">
                     <h2>Вход</h2>
-                    <button>Войти</button>
+                    <button id="OpenIn">Войти</button>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="register">
-        <h1>Регистрация</h1>
-        <form action="#">
-            <label>Имя</label>
+    <div class="modal" id="modal">
+        <div class="form">
+            <button id="closeBtn">X</button>
             <input type="text" placeholder="Введите имя" required>
-
-            <label>Email</label>
-            <input type="email" placeholder="example@email.ru" required>
-
-            <label>Пароль</label>
-            <input type="password" placeholder="Введите пароль" required>
-
-            <label>Повторите пароль</label>
-            <input type="password" placeholder="Повторите пароль" required> 
-        
-            <button type="submit">Зарегистрироваться</button>
-        </form>
+             <input type="email" placeholder="example@email.ru" required>
+             <input type="password" placeholder="Введите пароль" required>
+             <input type="password" placeholder="Повторите пароль" required> 
+             <button type="submit">Зарегистрироваться</button>
+        </div>
     </div>
 
+    <script src="scrtipt.js"></script>
+    
     <main></main>
 
     <footer></footer>

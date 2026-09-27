@@ -23,6 +23,47 @@ nav {
     align-items: center;
 }
 
+.modal{
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input{
+    padding: 12px;
+
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+input:focus{
+    border-color: brown;
+    outline: none;
+}
+
+form button{
+    margin-top: 15px;
+    padding: 12px;
+    background: rgb(112, 112, 112);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background: rgb(51, 51, 51);
+    transition: 0.3s;
+}
+
 a {
     text-decoration: none;
     color: black;
