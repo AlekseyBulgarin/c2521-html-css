@@ -1,19 +1,69 @@
-const registerBtn = document.getElementById("registerBtn");
+const openRegister = document.getElementById("openRegister")
+const openLogin = document.getElementById("openLogin")
 
-const registerModal = document.getElementById("registerModal");
+const registerModal = document.getElementById("registerModal")
+const loginModal = document.getElementById("loginModal")
 
-const closeBtn = document.getElementById("closeBtn");
+const closeRegister = document.getElementById("closeRegister")
+const closeLogin = document.getElementById("closeLogin")
 
-
-registerBtn.addEventListener("click", function () {
-
-    registerModal.classList.add("active");
-
-});
+const goLogin = document.getElementById("goLogin")
+const goRegister = document.getElementById("goRegister")
 
 
-closeBtn.addEventListener("click", function () {
+openRegister.addEventListener("click", function () {
+    registerModal.classList.add("active")
+})
 
-    registerModal.classList.remove("active");
 
-});
+openLogin.addEventListener("click", function () {
+    loginModal.classList.add("active")
+})
+
+
+closeRegister.addEventListener("click", function () {
+    registerModal.classList.remove("active")
+})
+
+
+closeLogin.addEventListener("click", function () {
+    loginModal.classList.remove("active")
+})
+
+
+goLogin.addEventListener("click", function (event) {
+
+    event.preventDefault()
+
+    registerModal.classList.remove("active")
+    loginModal.classList.add("active")
+
+})
+
+
+goRegister.addEventListener("click", function (event) {
+
+    event.preventDefault()
+
+    loginModal.classList.remove("active")
+    registerModal.classList.add("active")
+
+})
+
+
+registerModal.addEventListener("click", function (event) {
+
+    if (event.target === registerModal) {
+        registerModal.classList.remove("active")
+    }
+
+})
+
+
+loginModal.addEventListener("click", function (event) {
+
+    if (event.target === loginModal) {
+        loginModal.classList.remove("active")
+    }
+
+})
